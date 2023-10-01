@@ -3,7 +3,7 @@ import org.testng.annotations.*;
 
 public class GradeTest {
 
-    @DataProvider(name = "gradeData")
+    @DataProvider(name = "validData")
     public Object[][] gradeData() {
         return new Object[][]{
                 {1000000, "Invalid"},
@@ -47,7 +47,7 @@ public class GradeTest {
         };
     }
 
-    @Test(dataProvider = "gradeData")
+    @Test(dataProvider = "validData")
     public void testGrade(int mark, String expected) {
         Calculator calculator = new Calculator();
         Assert.assertEquals(calculator.getGrade(mark), expected);

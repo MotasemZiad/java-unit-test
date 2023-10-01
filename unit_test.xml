@@ -4,13 +4,12 @@
 <suite name="Calculator">
     <test name="Division Tests">
         <classes>
-            <class name="ExampleTest">
-            </class>
+            <class name="ExampleTest" />
         </classes>
     </test>
     <test name="Grading Tests">
         <classes>
-            <class name="GradeTest"></class>
+            <class name="GradeTest" />
         </classes>
     </test>
 </suite>
