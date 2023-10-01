@@ -35,6 +35,18 @@ public class GradeTest {
         };
     }
 
+    @DataProvider(name = "invalidData")
+    public Object[][] invalidData() {
+        return new Object[][]{
+                {1000000, "invalid"},
+                {101, "invalid"},
+                {39, "invalid"},
+                {0, "invalid"},
+                {-1, "invalid"},
+                {-1000000, "invalid"},
+        };
+    }
+
     @Test(dataProvider = "gradeData")
     public void testGrade(int mark, String expected) {
         Calculator calculator = new Calculator();

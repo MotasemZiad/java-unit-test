@@ -1,5 +1,6 @@
 public class Calculator {
-    public float division(float x, float y){
+    public float division(float x, float y) throws ArithmeticException{
+        if(y == 0) throw new ArithmeticException();
         return x / y;
     }
 
