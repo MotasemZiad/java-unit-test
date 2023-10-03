@@ -18,9 +18,9 @@ public class ExampleTest {
     @DataProvider(name = "invalidDivisionData")
     public Object[][] invalidDivisionMethod() {
         return new Object[][]{
-                {10.0f, 0.0f, 2.0f},
-                {-10.0f, 0.0f, 2.0f},
-                {0.0f, 0.0f, 2.0f},
+                {10, 0},
+                {-10.0f, 0.0f},
+                {0.0f, 0.0f},
         };
     }
 
